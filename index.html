@@ -79,6 +79,21 @@
       border-radius: 10px;
     }
 
+    .accordion {
+      margin: 10px 0;
+    }
+
+    .accordion-details {
+      display: none;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    .accordion:hover .accordion-details {
+      display: block;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -97,32 +112,53 @@
   </header>
 
   <section>
+    <h2>Bienvenida a Cerro Porteño</h2>
+    <p>Cerro Porteño, conocido como el club más popular de Paraguay, es un símbolo del fútbol nacional con una apasionada base de hinchas estimada en 4 millones. Fundado el 1 de octubre de 1912, este equipo ha dejado una huella imborrable en el continente, ocupando el 6.º lugar histórico en Sudamérica por puntos acumulados en la Copa Libertadores, un testimonio de su consistencia y relevancia internacional.</p>
+  </section>
+
+  <section>
     <h2>Identidad del Club</h2>
     <div class="stats-grid">
       <div class="stat-box">
-        <h3>Fecha de Fundación</h3>
+        <h3>Nombre</h3>
+        <p>Cerro Porteño</p>
+      </div>
+      <div class="stat-box">
+        <h3>Fundación</h3>
         <p>1 de octubre de 1912</p>
       </div>
       <div class="stat-box">
+        <h3>Apodo</h3>
+        <p>El Ciclón del Barrio Obrero</p>
+      </div>
+      <div class="stat-box">
         <h3>Estadio</h3>
-        <p>Estadio General Pablo Rojas</p>
+        <p>La Nueva Olla (capacidad: 45.000)</p>
       </div>
       <div class="stat-box">
-        <h3>Capacidad</h3>
-        <p>45,000 espectadores</p>
+        <h3>Ubicación</h3>
+        <p>Asunción, Paraguay</p>
       </div>
       <div class="stat-box">
-        <h3>Colores de Camiseta</h3>
+        <h3>Hinchas estimados</h3>
+        <p>4.000.000</p>
+      </div>
+      <div class="stat-box">
+        <h3>Popularidad</h3>
+        <p>Club más popular de Paraguay</p>
+      </div>
+      <div class="stat-box">
+        <h3>Colores de camiseta</h3>
         <p>Azul y rojo</p>
       </div>
     </div>
     <div class="image-container">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Estadio_General_Pablo_Rojas.jpg" alt="Estadio General Pablo Rojas" width="600">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Estadio_General_Pablo_Rojas.jpg" alt="Estadio La Nueva Olla" width="600">
     </div>
   </section>
 
   <section>
-    <h2>Logros Históricos</h2>
+    <h2>Palmarés</h2>
     <div class="stats-grid">
       <div class="stat-box">
         <h3>Títulos de Primera División</h3>
@@ -132,19 +168,118 @@
         <h3>Torneo República</h3>
         <p>3</p>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rendimiento Internacional</h2>
+    <div class="stats-grid">
       <div class="stat-box">
-        <h3>Puntos en Copa Libertadores</h3>
+        <h3>Posición histórica en Sudamérica</h3>
+        <p>6.º lugar (Copa Libertadores)</p>
+      </div>
+      <div class="stat-box">
+        <h3>Puntos totales</h3>
         <p>440</p>
       </div>
       <div class="stat-box">
-        <h3>Posición Histórica en Libertadores</h3>
-        <p>6°</p>
+        <h3>Victorias</h3>
+        <p>130</p>
+      </div>
+      <div class="stat-box">
+        <h3>Empates</h3>
+        <p>97</p>
+      </div>
+      <div class="stat-box">
+        <h3>Derrotas</h3>
+        <p>124</p>
+      </div>
+      <div class="stat-box">
+        <h3>Goles a favor</h3>
+        <p>441</p>
+      </div>
+      <div class="stat-box">
+        <h3>Goles en contra</h3>
+        <p>457</p>
+      </div>
+      <div class="stat-box">
+        <h3>Diferencia de goles</h3>
+        <p>-16</p>
+      </div>
+      <div class="stat-box">
+        <h3>Semifinales de Libertadores</h3>
+        <p>6 (1973, 1978, 1993, 1998, 1999, 2011)</p>
+      </div>
+      <div class="stat-box">
+        <h3>Última participación destacada</h3>
+        <p>Octavos de final 2025</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Máximas Goleadas</h2>
+    <h2>Rivalidades en la Liga Paraguaya</h2>
+    <div class="accordion">
+      <div class="stat-box">vs. Olimpia
+        <div class="accordion-details">
+          <p>Partidos jugados: 327</p>
+          <p>Victorias de Cerro Porteño: 113</p>
+          <p>Empates: 101</p>
+          <p>Derrotas: 113</p>
+          <p>Goles a favor: ~380</p>
+          <p>Goles en contra: ~380</p>
+          <p>Diferencia de goles: 0</p>
+        </div>
+      </div>
+      <div class="stat-box">vs. Libertad
+        <div class="accordion-details">
+          <p>Partidos jugados: 281</p>
+          <p>Victorias de Cerro Porteño: 107</p>
+          <p>Empates: 80</p>
+          <p>Derrotas: 94</p>
+          <p>Goles a favor: 386</p>
+          <p>Goles en contra: 349</p>
+          <p>Diferencia de goles: +37</p>
+        </div>
+      </div>
+      <div class="stat-box">vs. Guaraní
+        <div class="accordion-details">
+          <p>Partidos jugados: 116</p>
+          <p>Victorias de Cerro Porteño: 62</p>
+          <p>Empates: 27</p>
+          <p>Derrotas: 27</p>
+          <p>Goles a favor: ~190</p>
+          <p>Goles en contra: ~130</p>
+          <p>Diferencia de goles: +60</p>
+        </div>
+      </div>
+      <div class="stat-box">vs. Nacional (Asunción)
+        <div class="accordion-details">
+          <p>Partidos jugados: 66</p>
+          <p>Victorias de Cerro Porteño: 38</p>
+          <p>Empates: 18</p>
+          <p>Derrotas: 10</p>
+          <p>Goles a favor: 128</p>
+          <p>Goles en contra: 78</p>
+          <p>Diferencia de goles: +50</p>
+        </div>
+      </div>
+      <div class="stat-box">vs. Sportivo Luqueño
+        <div class="accordion-details">
+          <p>Partidos jugados: 91</p>
+          <p>Victorias de Cerro Porteño: 55</p>
+          <p>Empates: 20</p>
+          <p>Derrotas: 16</p>
+          <p>Goles a favor: ~170</p>
+          <p>Goles en contra: ~90</p>
+          <p>Diferencia de goles: +80</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Máximas Goleadas Históricas</h2>
     <div class="stats-grid">
       <div class="stat-box">
         <h3>7-0 vs Club Aurora</h3>
@@ -155,26 +290,38 @@
         <p>Copa Sudamericana, 25/08/2016</p>
       </div>
       <div class="stat-box">
-        <h3>6-0 vs Caracas (visitante)</h3>
+        <h3>6-0 vs Caracas</h3>
         <p>Copa Libertadores, 1995</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Máximas Victorias contra Olimpia</h2>
+    <h2>Máximas Goleadas contra Olimpia</h2>
     <div class="stats-grid">
       <div class="stat-box">
+        <h3>5-1</h3>
+        <p>1915, Primer choque oficial</p>
+      </div>
+      <div class="stat-box">
+        <h3>7-4</h3>
+        <p>1915, Tercera finalísima del Campeonato Nacional</p>
+      </div>
+      <div class="stat-box">
+        <h3>8-1</h3>
+        <p>1937, Campeonato Nacional</p>
+      </div>
+      <div class="stat-box">
+        <h3>4-1</h3>
+        <p>2012, Primera División</p>
+      </div>
+      <div class="stat-box">
         <h3>5-0</h3>
-        <p>25/11/1934, Primera División</p>
+        <p>5 de junio de 2005, Torneo Clausura</p>
       </div>
       <div class="stat-box">
         <h3>4-0</h3>
-        <p>14/08/1949, Primera División</p>
-      </div>
-      <div class="stat-box">
-        <h3>4-0</h3>
-        <p>05/06/2005, Primera División</p>
+        <p>2022, Primera División</p>
       </div>
     </div>
   </section>
@@ -183,18 +330,18 @@
     <h2>Récords de Invicto</h2>
     <div class="stats-grid">
       <div class="stat-box">
-        <h3>Racha Más Larga</h3>
-        <p>27 partidos sin derrotas (2012-2013)</p>
+        <h3>Racha más larga sin derrotas</h3>
+        <p>27 partidos (2012-2013)</p>
       </div>
       <div class="stat-box">
-        <h3>Campeonatos Invictos</h3>
+        <h3>Campeonatos invictos</h3>
         <p>4 (1913, 1918, 1919, 2013 Clausura)</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Veces en Top 2 en Fútbol Paraguayo</h2>
+    <h2>Dominio en la Liga</h2>
     <div class="stats-grid">
       <div class="stat-box">
         <h3>Campeonatos (1er Lugar)</h3>
@@ -212,21 +359,7 @@
   </section>
 
   <section>
-    <h2>Logros Internacionales</h2>
-    <div class="stats-grid">
-      <div class="stat-box">
-        <h3>Semifinales Copa Libertadores</h3>
-        <p>6 (1973, 1978, 1993, 1998, 1999, 2011)</p>
-      </div>
-      <div class="stat-box">
-        <h3>Semifinales Copa Sudamericana</h3>
-        <p>2 (2009, 2016)</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Top 10 Goleadores</h2>
+    <h2>Máximos Goleadores del Club</h2>
     <div class="stats-grid">
       <div class="stat-box">
         <h3>Virgilio Ferreira</h3>
@@ -246,43 +379,18 @@
       <div class="stat-box">
         <h3>Héctor Núñez</h3>
         <p>69 goles</p>
-        <div class="player-desc">Ídolo uruguayo de los 70s.</div>
+        <div class="player-desc">Ídolo de los 70s.</div>
       </div>
       <div class="stat-box">
         <h3>Diego Churín</h3>
         <p>69 goles</p>
-        <div class="player-desc">Capitán actual, récord de partidos.</div>
-      </div>
-      <div class="stat-box">
-        <h3>Erwin Ávalos</h3>
-        <p>70 goles</p>
-        <div class="player-desc">Goleador de semis de Libertadores.</div>
-      </div>
-      <div class="stat-box">
-        <h3>César Ramírez</h3>
-        <p>65 goles</p>
-        <div class="player-desc">El Tigre, estrella de los 90s.</div>
-      </div>
-      <div class="stat-box">
-        <h3>Jorge Recalde</h3>
-        <p>55 goles</p>
-        <div class="player-desc">Clave en finales de los 80s.</div>
-      </div>
-      <div class="stat-box">
-        <h3>Cayetano Ré</h3>
-        <p>58 goles</p>
-        <div class="player-desc">Pionero exportado a Europa.</div>
-      </div>
-      <div class="stat-box">
-        <h3>Jonathan Fabbro</h3>
-        <p>37 goles</p>
-        <div class="player-desc">Crack en títulos y asistencias.</div>
+        <div class="player-desc">El Goleador de la Nueva Olla.</div>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Símbolos del Club</h2>
+    <h2>Ídolos Históricos</h2>
     <div class="stats-grid">
       <div class="stat-box">
         <h3>Saturnino Arrúa</h3>
@@ -328,21 +436,26 @@
   </section>
 
   <section>
-    <h2>Curiosidades Adicionales</h2>
+    <h2>Datos Curiosos</h2>
     <div class="stats-grid">
       <div class="stat-box">
-        <h3>Primer Título</h3>
+        <h3>Primer título</h3>
         <p>1913</p>
       </div>
       <div class="stat-box">
-        <h3>Hinchas Registrados</h3>
-        <p>~3 millones (estimado)</p>
+        <h3>Hinchas estimados</h3>
+        <p>4.000.000</p>
       </div>
       <div class="stat-box">
         <h3>Apodo</h3>
-        <p>El Ciclón</p>
+        <p>El Ciclón del Barrio Obrero</p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>Información Actualizada</h2>
+    <p>Datos actualizados al 12:23 PM -03, miércoles 22 de octubre de 2025.</p>
   </section>
 
   <footer>
